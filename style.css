@@ -9,6 +9,18 @@
     box-sizing: border-box;
 }
 
+main{
+    width: 550px;
+    margin: auto;
+}
+
+main p{
+    font-family: 'Oswald', sans-serif;
+    color: var(--dark-blue);
+    font-weight: 800;
+    font-size: 22px;
+}
+
 p{
     color: var(--dark-blue);
     font-family: 'PT Serif', serif;
@@ -33,10 +45,15 @@ footer{
 .container{
     width: 550px;
     margin: auto;
+    display: flex;
+}
+
+.conteudo{
+    margin-top: 50px;
 }
 
 .conteudo h1{
-    margin: 50px 0 35px 0;
+    margin: 0px 0 35px 0;
     font-size: 50px;
 }
 
@@ -59,8 +76,7 @@ footer{
 
 /*FORM----------*/
 form{
-    border: 1px black solid;
-    padding: 15px;
+    overflow: auto;
 }
 
 label{
@@ -69,8 +85,19 @@ label{
     color: var(--dark-blue);
 }
 
+#div-form{
+    border: 1px var(--dark-blue) solid;
+    padding: 15px;
+}
+
 .input-text{
     width: 100%;
+    font-size: 18px;
+    line-height: 29px;
+    padding-left: 5px;
+    background-color: #E8F8FF;
+    border-radius: 5px;
+    border: var(--dark-blue) solid 1px;
 }
 
 .input-left{
@@ -89,7 +116,11 @@ label{
     background-color: #E8F8FF;
     margin-bottom: 8rem;
     max-width: 457px;
-    max-height: 712px;
+    max-height: 7120px;
+}
+
+.form-label{
+    padding-bottom: 20px;
 }
 
 .curriculo h3{
@@ -114,16 +145,12 @@ label{
     display: flex;
 }
 
-.label-curriculo{
-    margin-bottom: 0;
-}
-
 .label-file-input{
     border: none;
     background-color: #4a85af;
     color: white;
     padding: 0.4rem 1.2rem;
-    margin: 6px 10px 15px 0;
+    margin: 12px 10px 15px 0;
     cursor: pointer;
 }
 
@@ -136,14 +163,41 @@ input[type='file']{
     font-weight: lighter;
     font-size: 14px!important;   
     margin:0!important;
+    line-height: 115%;
+
+
 }
 
 #envio{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
     border: none;
     background-color: var(--dark-blue);
     color: #fff;
     font-size: 20px;
     padding: 0.6rem 1.2rem;
-    margin-top: 30px;
+    margin: 30px 0 15px 0;
     float: right;
+    border-radius: 0;
+}
+
+
+.lateral{
+    background-color: var(--dark-blue);
+    height: 90.825%;
+    width: 57%;
+    float: right;
+    margin-right: -400px;
+    position: relative;
+    flex: 1;
+}
+
+#imagem{
+    position: absolute;
+    top: 28%;
+    left: -32%;
+}
+
+.principal{
+    flex: 1;
 }
