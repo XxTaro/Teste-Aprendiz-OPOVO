@@ -1,0 +1,139 @@
+:root{
+    --blue: #0079C1;
+    --dark-blue: #314163;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color: var(--dark-blue);
+    font-family: 'PT Serif', serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+    color: var(--dark-blue);
+}
+
+footer{
+    background-color: var(--blue);
+}
+/*NAVBAR----------*/
+
+/*CONTENT---------*/
+.container{
+    width: 550px;
+    margin: auto;
+}
+
+.conteudo h1{
+    margin: 50px 0 35px 0;
+    font-size: 50px;
+}
+
+.conteudo h2{
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.conteudo h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.conteudo p{
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+
+
+/*FORM----------*/
+form{
+    border: 1px black solid;
+    padding: 15px;
+}
+
+label{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.input-text{
+    width: 100%;
+}
+
+.input-left{
+    float: left;
+    width: 40%;
+}
+
+.input-right{
+    float: right;
+    padding-left: 15px;
+    width: 60%;
+}
+
+.curriculo{
+    border: 15px #E8F8FF solid;
+    background-color: #E8F8FF;
+    margin-bottom: 8rem;
+    max-width: 457px;
+    max-height: 712px;
+}
+
+.curriculo h3{
+    font-size: 26px;
+}
+
+#div-anexar{
+    float: left;
+    width: 40%;
+}
+
+#div-informações{
+    width: 60%;
+    float: right;
+    height: 100%;
+}
+
+.test{
+    overflow: auto;
+}
+
+#anexar{
+    border: none;
+    background-color: #4a85af;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    margin: 12px 10px 15px 0;
+    cursor: pointer;
+}
+
+.informações{
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 14px!important;   
+    margin:0!important;
+
+}
+
+#envio{
+    border: none;
+    background-color: var(--dark-blue);
+    color: #fff;
+    font-size: 20px;
+    padding: 0.6rem 1.2rem;
+    margin-top: 30px;
+    float: right;
+}
