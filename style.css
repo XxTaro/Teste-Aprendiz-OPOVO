@@ -105,19 +105,30 @@ label{
     width: 60%;
     float: right;
     height: 100%;
+    align-self: center;
+    justify-content: center;
 }
 
 .test{
     overflow: auto;
+    display: flex;
 }
 
-#anexar{
+.label-curriculo{
+    margin-bottom: 0;
+}
+
+.label-file-input{
     border: none;
     background-color: #4a85af;
     color: white;
-    padding: 0.8rem 1.2rem;
-    margin: 12px 10px 15px 0;
+    padding: 0.4rem 1.2rem;
+    margin: 6px 10px 15px 0;
     cursor: pointer;
+}
+
+input[type='file']{
+    display: none;
 }
 
 .informações{
@@ -125,7 +136,6 @@ label{
     font-weight: lighter;
     font-size: 14px!important;   
     margin:0!important;
-
 }
 
 #envio{
