@@ -3,6 +3,10 @@
     --dark-blue: #314163;
 }
 
+body{
+    min-width: 850px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +14,6 @@
 }
 
 main{
-    width: 550px;
     margin: auto;
 }
 
@@ -37,19 +40,18 @@ h1, h2, h3{
 }
 
 footer{
+    margin-top: 8rem;
     background-color: var(--blue);
 }
 /*NAVBAR----------*/
 
 /*CONTENT---------*/
-.container{
-    width: 550px;
-    margin: auto;
-    display: flex;
-}
 
 .conteudo{
     margin-top: 50px;
+    width: 850px;
+    margin: auto;
+    display: flex;
 }
 
 .conteudo h1{
@@ -114,7 +116,6 @@ label{
 .curriculo{
     border: 15px #E8F8FF solid;
     background-color: #E8F8FF;
-    margin-bottom: 8rem;
     max-width: 457px;
     max-height: 7120px;
 }
@@ -164,8 +165,6 @@ input[type='file']{
     font-size: 14px!important;   
     margin:0!important;
     line-height: 115%;
-
-
 }
 
 #envio{
@@ -179,25 +178,41 @@ input[type='file']{
     margin: 30px 0 15px 0;
     float: right;
     border-radius: 0;
+    cursor: pointer;
 }
 
 
 .lateral{
     background-color: var(--dark-blue);
-    height: 90.825%;
     width: 57%;
     float: right;
-    margin-right: -400px;
     position: relative;
-    flex: 1;
 }
 
 #imagem{
     position: absolute;
     top: 28%;
-    left: -32%;
+    left: -37%;
 }
 
-.principal{
-    flex: 1;
+@media (max-width: 925px){
+    html{
+        overflow-x:hidden;
+    }
+    .lateral{
+        display:none;
+    }
+    .principal{
+        max-width:584px;
+    }
+    .principal{
+        margin:auto;
+    }
+    .curriculo{
+        margin:auto;
+    }
+}
+
+li{
+    display:inline;
 }
