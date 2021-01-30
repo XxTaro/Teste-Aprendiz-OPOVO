@@ -25,13 +25,12 @@ main p{
 }
 
 p{
-    color: var(--dark-blue);
+    
     font-family: 'PT Serif', serif;
 }
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 h1, h2, h3{
@@ -39,13 +38,67 @@ h1, h2, h3{
     color: var(--dark-blue);
 }
 
-footer{
-    margin-top: 8rem;
-    background-color: var(--blue);
-}
 /*NAVBAR----------*/
+header{
+    background-color: var(--blue);
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 1100px;
+    margin: auto;
+}
+
+.navbar a{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*li{
+    display:inline-block;
+}*/
+
+#logo{
+    float: left;
+}
+
+#selections{
+    float: right;
+}
+
+#selections a{
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*#selections li{
+    margin-left: 10px;
+}*/
+
+
 
 /*CONTENT---------*/
+
+#voltar{
+    width: 850px;
+    margin: 50px auto 50px auto;
+}
+
+#voltar a{
+    color: var(--dark-blue);
+}
+
+.lateral{
+    background-color: var(--dark-blue);
+    width: 57%;
+    float: right;
+    position: relative;
+}
 
 .conteudo{
     margin-top: 50px;
@@ -74,7 +127,9 @@ footer{
     margin-bottom: 30px;
 }
 
-
+.principal{
+    color: var(--dark-blue);
+}
 
 /*FORM----------*/
 form{
@@ -85,6 +140,7 @@ label{
     font-family: 'Oswald', sans-serif;
     font-weight: 800;
     color: var(--dark-blue);
+    display: inline-block;
 }
 
 #div-form{
@@ -100,6 +156,10 @@ label{
     background-color: #E8F8FF;
     border-radius: 5px;
     border: var(--dark-blue) solid 1px;
+}
+
+input{
+    margin-bottom: 10px;
 }
 
 .input-left{
@@ -121,7 +181,7 @@ label{
 }
 
 .form-label{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .curriculo h3{
@@ -141,7 +201,7 @@ label{
     justify-content: center;
 }
 
-.test{
+.half-input{
     overflow: auto;
     display: flex;
 }
@@ -181,19 +241,27 @@ input[type='file']{
     cursor: pointer;
 }
 
-
-.lateral{
-    background-color: var(--dark-blue);
-    width: 57%;
-    float: right;
-    position: relative;
-}
-
 #imagem{
     position: absolute;
     top: 28%;
     left: -37%;
 }
+
+/*FOOTER----------*/
+footer{
+    margin-top: 8rem;
+    background-color: var(--blue);
+    padding: 15px;
+}
+
+footer div p{
+    float: right;
+    color: white;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+/*RESPONSIVIDADE---------*/
 
 @media (max-width: 925px){
     html{
@@ -204,15 +272,18 @@ input[type='file']{
     }
     .principal{
         max-width:584px;
-    }
-    .principal{
         margin:auto;
     }
     .curriculo{
         margin:auto;
     }
+    .voltar{
+        margin: 50px auto 50px auto;
+    }
 }
 
-li{
-    display:inline;
+@media(max-width: 1300px){
+    .navbar{
+        width: 800px;
+    }
 }

@@ -12,22 +12,24 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul>
-                <li><h1><a href="#">Opovo online</a></h1></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Vídeo</a></li>
-                <li><a href="#">Propósito</a></li>
-                <li><a href="#">Diversidade</a></li>
-                <li><a href="#">Valores</a></li>
-                <li><a href="#">Áreas de Atuação</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Vagas</a></li>
-            </ul>
+            <div id="logo">
+                <a href="#"><img src="img/o-povo-online_USADO_NO_MOBILE.svg" alt="" width="180px" height="27px"></a></li>
+            </div>
+            <div id="selections">
+                <a href="#">Sobre</a>
+                <a href="#">Vídeo</a>
+                <a href="#">Propósito</a>
+                <a href="#">Diversidade</a>
+                <a href="#">Valores</a></li>
+                <a href="#">Áreas de Atuação</a>
+                <a href="#">Depoimentos</a>
+                <a href="#">Vagas</a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <p>← Voltar</p>
+        <p class="principal" id="voltar"><a href="#">← Voltar</a></p>
             <div class="conteudo">
                 <div class="principal">
                     <h1>VAGAS</h1>
@@ -56,7 +58,7 @@
                                     <label for="cep" class="form-label">Cep</label><br>
                                     <input type="text" id="cep" class="input-text">
                                 </div>
-                                <div class="test">
+                                <div class="half-input">
                                     <div class="input-left">
                                         <label for="endereço" class="form-label">Endereço</label><br>
                                         <input type="text" id="endereço" class="input-text">
@@ -66,7 +68,7 @@
                                         <input type="text" id="numero" class="input-text">                   
                                     </div>
                                 </div>
-                                <div class="test">
+                                <div class="half-input">
                                     <div class="input-left">
                                         <label for="cidade" class="form-label">Cidade</label><br>
                                         <input type="text" id="cidade" class="input-text">
@@ -78,7 +80,7 @@
                                 </div>
                                 <div>
                                     <label for="envio">Currículo</label>
-                                    <div class="test">
+                                    <div class="half-input">
                                         <label for="anexar" class="label-file-input">Anexar currículo</label>
                                         <input type="file" id="anexar">
                                         <p class="informações">
@@ -102,8 +104,10 @@
     </main>
 
     <footer>
-        <p>OPOVO Online</p>
-        <p>Copyright 1997-2016</p>
+        <div class="navbar">
+                <img src="./img/o-povo-online_USADO_NO_MOBILE.svg" alt="" width="131px" height="19px">
+                <p>Copyright&#169; 1997-2016</p>
+        </div>
     </footer>
 </body>
 </html>
