@@ -4,7 +4,8 @@
 }
 
 body{
-    min-width: 850px;
+    width:100vw;
+    overflow-x: hidden;
 }
 
 *{
@@ -44,28 +45,34 @@ header{
     padding: 15px;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .limite{
-    width: 1100px;
+    max-width: 1100px;
     margin: auto;
     transition: 500ms;
+    overflow:auto;
 }
 
-#sections{
+.topnav{
+    margin-top: 5px;
     float: right;
+    overflow: hidden;
 }
 
-#sections a{
+.topnav a{
     margin-left: 20px;
+    float:left;
+    display: block;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+
 }
+
+
+.topnav .icon {
+    display: none;
+}
+
 /*CONTENT---------*/
 
 #voltar{
@@ -86,7 +93,7 @@ nav{
 
 .conteudo{
     margin-top: 50px;
-    width: 850px;
+    max-width: 850px;
     margin: auto;
     display: flex;
 }
@@ -130,6 +137,11 @@ label{
 #div-form{
     border: 1px var(--dark-blue) solid;
     padding: 15px;
+}
+
+#logo{
+    margin-top:5px;
+    display:inline-block;
 }
 
 .input-text{
@@ -264,18 +276,46 @@ footer div p{
     .voltar{
         margin: 50px auto 50px auto;
     }
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+        font-size: 40px;
+    }
+    #logo{
+        margin-top:16px;
+    }
+    
+    .topnav {
+        margin-top:0px;
+        float: right;
+        display: block;
+    }
+    .topnav.responsive{
+        position:relative;
+        top:0px;
+        right:0px;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+        font-size:30px;
+    }
+    .topnav.responsive a.icon {
+        font-size:40px;
+    }
+
 }
 
 @media(max-width: 1300px){
     .limite{
-        width: 800px;
+        max-width: 800px;
         transition: 500ms;
     }
-    #sections a{
+    .topnav a{
         font-size: 16px;
-
-    }
-    #logo{
-        size: 80%;
     }
 }

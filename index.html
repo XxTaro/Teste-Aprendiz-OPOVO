@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=720" />
     <title>Vagas Opovo</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,18 +13,21 @@
 <body>
     <header>
         <nav class="limite">
-            <div id="#logo">
+            <div id="logo">
                 <img src="img/o-povo-online_USADO_NO_MOBILE.svg" alt="Logo O Povo" width="180px" height="27px">
             </div>
-            <div id="sections">
-                <a href="#">Sobre</a>
-                <a href="#">Vídeo</a>
-                <a href="#">Propósito</a>
-                <a href="#">Diversidade</a>
-                <a href="#">Valores</a></li>
-                <a href="#">Áreas de Atuação</a>
-                <a href="#">Depoimentos</a>
-                <a href="#">Vagas</a>
+            <div class="topnav" id="sections">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                <div>
+                    <a href="#">Sobre</a>
+                    <a href="#">Vídeo</a>
+                    <a href="#">Propósito</a>
+                    <a href="#">Diversidade</a>
+                    <a href="#">Valores</a></li>
+                    <a href="#">Áreas de Atuação</a>
+                    <a href="#">Depoimentos</a>
+                    <a href="#">Vagas</a>      
+                </div>   
             </div>
         </nav>
     </header>
@@ -48,34 +52,34 @@
                             <h3>Envie seu currículo</h3>
                             <div>
                                 <label for="nome" class="form-label">Nome</label><br>
-                                <input type="text" id="nome" class="input-text">
+                                <input type="text" id="nome" name="nome" class="input-text">
                             </div>
                             <div>
                                 <label for="email" class="form-label">E-mail</label><br>
-                                <input type="text" id="email" class="input-text">
+                                <input type="text" id="email" name="email" class="input-text">
                             </div>
                             <div>
                                 <label for="cep" class="form-label">Cep</label><br>
-                                <input type="text" id="cep" class="input-text">
+                                <input type="text" id="cep" name="cep" class="input-text">
                             </div>
                             <div class="half-input">
                                 <div class="input-left">
                                     <label for="endereço" class="form-label">Endereço</label><br>
-                                    <input type="text" id="endereço" class="input-text">
+                                    <input type="text" id="endereço" name="endereço" class="input-text">
                                 </div>
                                 <div class="input-right">
                                     <label for="numero" class="form-label">Número</label><br>
-                                    <input type="text" id="numero" class="input-text">                   
+                                    <input type="text" id="numero" name="numero" class="input-text">                   
                                 </div>
                             </div>
                             <div class="half-input">
                                 <div class="input-left">
                                     <label for="cidade" class="form-label">Cidade</label><br>
-                                    <input type="text" id="cidade" class="input-text">
+                                    <input type="text" id="cidade" name="cidade" class="input-text">
                                 </div>
                                 <div class="input-right">
                                     <label for="estado" class="form-label">Estado</label><br>
-                                    <input type="text" id="estado" class="input-text">                   
+                                    <input type="text" id="estado" name="estado" class="input-text">                   
                                 </div>
                             </div>
                             <div>
@@ -107,5 +111,15 @@
                 <p>Copyright&#169; 1997-2016</p>
         </div>
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("sections");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
